@@ -1,0 +1,40 @@
+.header {
+    .container {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        // align-items: center;
+    }
+}
+
+.nav {
+    &_list {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    &_link {
+        color: #83888F;
+        font-family: "Barlow";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding: 0px 10px;
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 634px) {
+    .nav {
+        display: none;
+    }
+
+    .nav_button {
+        display: block;
+    }
+}
